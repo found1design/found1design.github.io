@@ -82,7 +82,7 @@ export class DomusPagina extends HTMLElement {
         gridImagenes.forEach( character => {
             listHTML += `
             <div class="image">
-                <a href="./${ character.enlace }"><img class="image__img" src="./public/proyectos/${ character.img }">
+                <a href="./${ character.enlace }"><img class="image__img" src="./proyectos/${ character.img }">
 		        <div class="image__overlay image__overlay--primary">
 			        <div class="image__title">${ character.nombre }</div>
 			        <p class="image__description">
