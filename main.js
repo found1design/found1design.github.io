@@ -1,6 +1,6 @@
 
 import './global.css';
-import "./docs/router";
+import "./src/router";
 
 
   
