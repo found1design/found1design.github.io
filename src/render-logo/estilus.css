@@ -1,0 +1,14 @@
+.magnitudine-primus {
+    width: 8rem;
+    height: auto;
+    fill: var(--color-blanco);
+
+}
+
+@media (min-width: 640px){
+    .magnitudine-primus {
+        width: 15rem;
+        fill: var(--color-blanco)
+
+    }
+}

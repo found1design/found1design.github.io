@@ -1,0 +1,199 @@
+br {
+    display: block;
+    content: "";
+    margin-bottom: 2rem; /* Adjust this value to increase or decrease the space */
+  }
+
+/* **** LISTA **** */
+
+.image {
+	position: relative;
+    width: auto;
+    height: 100%;
+}
+
+.image__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(220, 220, 220, 0.9);
+	color: var(--color-negro);
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+    justify-content: center;
+    padding: 2rem;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+
+
+.image__overlay>* {
+	transform: translateY(20px);
+	transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+	opacity: 1;
+}
+
+
+.image__overlay:hover>* {
+	transform: translateY(0);
+}
+
+.image__overlay:hover ~ .cursor{
+    width: 150px;
+    height: 150px;
+
+}
+
+.image__title {
+	font-family: composite;
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
+.image__description {
+	font-family: grotesk;
+    font-size: 1rem;
+    margin: 2rem 0rem;
+}
+
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    margin: 7rem auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.album{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(280px, 1fr));
+    place-items: end;
+    grid-gap: 3rem;
+}
+
+/* **** TEXTO **** */
+
+.hola{
+
+    display: flex;
+    flex-direction: column;
+    margin: 7rem auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    gap: 3rem;
+
+}
+.title{
+
+    color: var(--color-blanco);
+    width: 100%;
+    font-size: 1rem;
+    font-family: grotesk;
+    text-align: center;
+
+}
+
+.saludo {
+
+    color: var(--color-blanco);
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-family: composite;
+
+}
+
+
+@media (min-width: 640px){
+
+
+    .hola{
+
+        padding-left: 5rem;
+        padding-right: 5rem;
+        max-width: 1500px;
+        margin: 12rem auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+
+
+    }
+
+    .saludo {
+        padding-right: 0.5rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        width: 150rem;
+    }
+
+    .title {
+        text-align: left;
+    }
+
+
+    .proyectos{
+
+        padding-left: 5rem;
+        padding-right: 5rem;
+        max-width: 1500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+
+    }
+    
+
+}
+
+@media (min-width: 1000px){
+
+    .hola{
+        padding-left: 0rem;
+        padding-right: 0rem;
+
+    }
+
+    .saludo {
+
+        padding-left: 7rem;
+        padding-right: 7rem;
+        max-width: 1500px;
+        width: auto;
+        font-size: 4rem;
+        line-height: 4.2rem;
+
+        
+    }
+
+    .title{
+        margin: 0rem 2rem ;
+        font-size: 1rem;
+        position: absolute;
+        text-align: left;
+    
+    }
+
+    .album{
+        grid-template-columns: repeat(2, minmax(400px, 1fr));
+
+    }
+
+    .proyectos{
+
+        padding-left: 7rem;
+        padding-right: 7rem;
+
+
+    }
+
+
+}

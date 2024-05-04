@@ -1,0 +1,110 @@
+
+/* **** TEXTO **** */
+
+br {
+    display: block;
+    content: "";
+    margin-bottom: 2rem; /* Adjust this value to increase or decrease the space */
+  }
+
+  .hola{
+
+    display: flex;
+    flex-direction: column;
+    margin: 4rem auto;
+    padding-left: 3rem;
+    padding-right: 3.7rem;
+    gap: 3rem;
+
+}
+.title{
+
+    color: var(--color-blanco);
+    width: 100%;
+    font-size: 1rem;
+    font-family: grotesk;
+    text-align: center;
+
+}
+
+.saludo {
+
+    color: var(--color-blanco);
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-family: composite;
+
+}
+
+.espacio{
+    height: 8rem;
+}
+
+@media (min-width: 640px){
+
+
+    .hola{
+
+        padding-left: 5rem;
+        padding-right: 5rem;
+        max-width: 1500px;
+        margin: 12rem auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+
+
+    }
+
+    .saludo {
+        padding-right: 0.5rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        width: 150rem;
+    }
+
+    .title {
+        text-align: left;
+    }
+
+    .espacio{
+        height: 10rem;
+    }
+    
+    
+
+}
+
+@media (min-width: 1000px){
+
+    .hola{
+        padding-left: 0rem;
+        padding-right: 0rem;
+
+    }
+
+    .saludo {
+
+        padding-left: 7rem;
+        padding-right: 7rem;
+        max-width: 1500px;
+        width: auto;
+        font-size: 4rem;
+        line-height: 4.2rem;
+
+        
+    }
+
+    .title{
+        margin: 0rem 1rem ;
+        font-size: 1rem;
+        position: absolute;
+        text-align: left;
+    }
+
+    .espacio{
+        height: 11rem;
+    }
+
+}

@@ -1,0 +1,16 @@
+.magnitudine-primu {
+    width: 8rem;
+    height: auto;
+    fill: rgb(255, 255, 255);
+    cursor: none;
+
+}
+
+@media (min-width: 640px){
+    .magnitudine-primu {
+        width: 15rem;
+        fill: rgb(255, 255, 255);
+        cursor: none;
+
+    }
+}
