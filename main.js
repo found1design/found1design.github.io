@@ -1,6 +1,6 @@
 
 import './global.css';
-import "./src/router.js";
+import "./src/router";
 
 
   
